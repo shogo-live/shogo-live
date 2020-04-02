@@ -4,11 +4,15 @@
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+.clear {
+  clear: left;
 }
 
 .container {
@@ -111,6 +115,17 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+/* menu-iconのCSSを貼り付けてください */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display: none;
+}
+
+
 .lesson-wrapper {
   padding-bottom: 80px;
   padding-left: 5%;
@@ -188,18 +203,4 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
-}
-
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  /* デフォルトではメニューアイコンは非表示に */
-  display: none;
-}
-
-/* float: left; を解除 */
-.clear {
-  clear: left;
 }
